@@ -8,7 +8,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        .solution-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .process-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -19,8 +19,8 @@
                 Advantage<span class="text-blue-600">Marketing</span>
             </div>
             <nav class="hidden md:flex space-x-10">
+                <a href="#how-it-works" class="text-slate-600 hover:text-blue-600 font-medium transition">Process</a>
                 <a href="#solutions" class="text-slate-600 hover:text-blue-600 font-medium transition">Solutions</a>
-                <a href="#how-it-works" class="text-slate-600 hover:text-blue-600 font-medium transition">How it Works</a>
                 <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition">About Us</a>
             </nav>
             <div class="hidden md:flex">
@@ -56,33 +56,61 @@
         </div>
     </section>
 
-    <section id="how-it-works" class="py-24 bg-white border-b border-slate-100">
+    <section id="how-it-works" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-20">
                 <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-3">The Process</h2>
-                <h3 class="text-4xl font-bold text-slate-900">How We Scale Your Volume</h3>
+                <h3 class="text-4xl font-bold text-slate-900">Our Roadmap to Your Growth</h3>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">A systematic approach to identifying bottlenecks and deploying high-converting lead infrastructure.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold border-2 border-blue-100">1</div>
-                    <h4 class="font-bold text-lg mb-2">The Audit</h4>
-                    <p class="text-slate-500 text-sm">We analyze your current landing pages, ad spend, and lead-to-close ratios to find hidden gaps.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="process-card p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg shadow-blue-200">01</div>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4 text-slate-900">The Discovery Audit</h4>
+                        <p class="text-slate-600 leading-relaxed">
+                            We take a deep dive into your current marketing stack. From landing page heatmaps to ad spend efficiency, we identify the specific gaps where your potential leads are falling off the path.
+                        </p>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold border-2 border-blue-100">2</div>
-                    <h4 class="font-bold text-lg mb-2">Build & Test</h4>
-                    <p class="text-slate-500 text-sm">We deploy a customized funnel with high-intent filters designed specifically for your sales floor.</p>
+
+                <div class="process-card p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg shadow-blue-200">02</div>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4 text-slate-900">Custom Funnel Engineering</h4>
+                        <p class="text-slate-600 leading-relaxed">
+                            We don't use templates. We build a bespoke funnel tailored to your industry, featuring high-intent filtering and qualification questions that ensure your sales team only talks to real prospects.
+                        </p>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold border-2 border-blue-100">3</div>
-                    <h4 class="font-bold text-lg mb-2">Direct Sync</h4>
-                    <p class="text-slate-500 text-sm">Using API integrations, we push leads directly into your CRM in real-time as they convert.</p>
+
+                <div class="process-card p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg shadow-blue-200">03</div>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4 text-slate-900">Real-Time CRM Integration</h4>
+                        <p class="text-slate-600 leading-relaxed">
+                            Speed to lead is everything. We establish a direct API bridge between your new funnel and your CRM, delivering rich lead data to your agents the second a prospect clicks "submit."
+                        </p>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold shadow-lg">4</div>
-                    <h4 class="font-bold text-lg mb-2">Optimize</h4>
-                    <p class="text-slate-500 text-sm">We use live data to continuously lower your CPA while maintaining high lead quality.</p>
+
+                <div class="process-card p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg shadow-blue-200">04</div>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4 text-slate-900">Data-Driven Optimization</h4>
+                        <p class="text-slate-600 leading-relaxed">
+                            Once live, we don't just "set and forget." We continuously split-test headlines and creative to lower your Cost Per Acquisition (CPA) while maintaining the highest possible lead quality.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,7 +125,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="solution-card p-8 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
                     <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-6 shadow-blue-200 shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -107,7 +135,7 @@
                     <p class="text-slate-600 leading-relaxed">We deploy specialized lead generation systems designed for high-volume sales. We filter for qualification so your agents only talk to ready-to-buy prospects.</p>
                 </div>
 
-                <div class="solution-card p-8 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
                     <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-6 shadow-blue-200 shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -117,7 +145,7 @@
                     <p class="text-slate-600 leading-relaxed">Leads don't sit in an inbox. We push data directly into your CRM with full tracking and attribution, ensuring your team can strike while the lead is hot.</p>
                 </div>
 
-                <div class="solution-card p-8 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
                     <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-6 shadow-blue-200 shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 21h6l-.75-4M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -142,10 +170,7 @@
                     <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-3">About Us</h2>
                     <h3 class="text-4xl font-bold text-slate-900 mb-6">Built for Sales Leaders, by Sales Experts</h3>
                     <p class="text-slate-600 text-lg mb-6 leading-relaxed">
-                        At Advantage Marketing, we believe that lead generation shouldn't be a black box. Our mission is to provide transparent, high-performance marketing infrastructure that allows sales teams to focus on what they do best: closing.
-                    </p>
-                    <p class="text-slate-600 text-lg mb-8 leading-relaxed">
-                        With deep roots in sales leadership and technical development, we bridge the gap between complex digital marketing strategies and the practical needs of a busy sales floor.
+                        At Advantage Marketing, we believe that lead generation shouldn't be a black box. Our mission is to provide transparent, high-performance marketing infrastructure that allows sales teams to focus on closing.
                     </p>
                     <div class="grid grid-cols-2 gap-8">
                         <div>
@@ -168,16 +193,6 @@
                 <div class="lg:w-1/2 text-white text-center lg:text-left">
                     <h2 class="text-4xl font-bold mb-6">Scale Your Sales Floor Today</h2>
                     <p class="text-blue-100 text-lg mb-8">Ready to see how our funnel audit can increase your monthly volume? Fill out the form for a customized assessment.</p>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4 justify-center lg:justify-start">
-                            <span class="bg-blue-500 p-2 rounded-full">✓</span>
-                            <span>Direct API Integrations</span>
-                        </div>
-                        <div class="flex items-center gap-4 justify-center lg:justify-start">
-                            <span class="bg-blue-500 p-2 rounded-full">✓</span>
-                            <span>Verified Lead Scoring</span>
-                        </div>
-                    </div>
                 </div>
                 <div class="lg:w-1/2 w-full bg-white p-8 rounded-2xl shadow-2xl">
                     <form action="#" method="POST" class="space-y-4">
