@@ -198,12 +198,21 @@
                     <form action="#" method="POST" class="space-y-4">
                         <input type="text" placeholder="Full Name" class="w-full border-slate-200 border rounded-lg p-4 focus:ring-2 focus:ring-blue-600 outline-none" required>
                         <input type="email" placeholder="Work Email" class="w-full border-slate-200 border rounded-lg p-4 focus:ring-2 focus:ring-blue-600 outline-none" required>
+                        <input type="tel" placeholder="Phone Number" class="w-full border-slate-200 border rounded-lg p-4 focus:ring-2 focus:ring-blue-600 outline-none" required>
                         <select class="w-full border-slate-200 border rounded-lg p-4 focus:ring-2 focus:ring-blue-600 outline-none text-slate-500">
                             <option>Daily Lead Volume Needs</option>
                             <option>10 - 50</option>
                             <option>50 - 200</option>
                             <option>200+</option>
                         </select>
+                        
+                        <div class="flex items-start gap-3 mt-4 mb-4">
+                            <input type="checkbox" id="sms-consent" name="sms-consent" class="mt-1 w-5 h-5 text-blue-600 border-slate-300 rounded focus:ring-blue-600" required>
+                            <label for="sms-consent" class="text-xs text-slate-500 leading-tight">
+                                By checking this box and submitting this form, you consent to receive marketing and informational text messages from Advantage Marketing at the number provided. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to opt out at any time. View our Privacy Policy and Terms of Service.
+                            </label>
+                        </div>
+
                         <button type="submit" class="w-full bg-slate-900 text-white font-bold py-4 rounded-lg hover:bg-slate-800 transition">Get My Funnel Audit</button>
                     </form>
                 </div>
@@ -212,11 +221,25 @@
     </section>
 
     <footer class="bg-white py-12 border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <div class="font-bold text-2xl text-blue-900 mb-4">Advantage Marketing</div>
-            <p class="text-slate-500 text-sm mb-8">Building the next generation of marketing infrastructure for sales leaders.</p>
-            <div class="text-slate-400 text-xs">
-                © 2026 Advantage Marketing. All rights reserved.
+        <div class="max-w-7xl mx-auto px-4 text-center md:text-left grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="font-bold text-2xl text-blue-900 mb-4">Advantage Marketing</div>
+                <p class="text-slate-500 text-sm mb-4">Building the next generation of marketing infrastructure for sales leaders.</p>
+            </div>
+            
+            <div class="md:mx-auto">
+                <h4 class="text-slate-900 font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-slate-500">
+                    <li><a href="#" class="hover:text-blue-600 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Terms of Service</a></li>
+                    <li><a href="#contact" class="hover:text-blue-600 transition">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:text-right">
+                <div class="text-slate-400 text-xs mt-8 md:mt-0">
+                    &copy; 2026 Advantage Marketing.<br>All rights reserved.
+                </div>
             </div>
         </div>
     </footer>
